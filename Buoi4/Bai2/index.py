@@ -1,6 +1,4 @@
-from os import putenv
 import pyautogui
-
 def draw_line(start_x,start_y,move_x,move_y):
     pyautogui.mouseDown(start_x,start_y)
     pyautogui.move(move_x,move_y)
