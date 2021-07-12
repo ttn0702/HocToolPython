@@ -30,10 +30,10 @@ File_Excel1 = File_Excel('data.xlsx')
 sheet_name = 'Sheet1'
 File_Excel1.update_cell(sheet_name,'A1','URL')
 File_Excel1.update_cell(sheet_name,'B1',"Title")
-for i in range(1,len(list_url_total)):
+for i in range(0,len(list_url_total)):
         url = list_url_total[i]
         title = list_title_total[i]
-        cell_name_url ="A%s"%(i+1)
-        cell_name_title ="B%s"%(i+1)
+        cell_name_url ="A%s"%(i+2)
+        cell_name_title ="B%s"%(i+2)
         File_Excel1.update_cell(sheet_name,cell_name_url,url)
         File_Excel1.update_cell(sheet_name,cell_name_title,title)
