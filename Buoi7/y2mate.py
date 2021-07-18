@@ -15,7 +15,7 @@ def download_video(url_download,file_name):
         'file': file
     }
     res = requests.get(url_download, stream=True,timeout=10,headers=headers,data=data,verify=False)
-    file_path = f"C:\\Users\\asus\\Desktop\\HOC\\Github\\HocToolPython\\Buoi7\\Video\\{file_name}"
+    file_path = f".\\Video\\{file_name}"
     with open(file_path,'wb') as out_file:
         shutil.copyfileobj(res.raw,out_file)
     del res
